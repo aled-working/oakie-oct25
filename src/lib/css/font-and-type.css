@@ -8,25 +8,51 @@ select {
 	font-optical-sizing: auto;
 	font-weight: 500 !important;
 }
-h1 {
-	font-size: 3rem !important;
-}
+
+/* New text styles based on design system */
 h2 {
-	font-size: 2rem;
+	font-size: 26px;
+	line-height: 110%;
+	font-weight: 700;
 }
 
 h3 {
-	font-size: 1.6rem;
+	font-size: 17px;
+	line-height: 110%;
+	font-weight: 700;
 }
+
+p {
+	font-size: 14px;
+	line-height: 130%;
+	font-weight: 500;
+}
+
+strong {
+	font-size: 14px;
+	line-height: 130%;
+	font-weight: 700;
+}
+
+.tiny {
+	font-size: 10px;
+	line-height: 130%;
+	font-weight: 500;
+}
+
+/* Old styles - commented out */
+/*
+h1 {
+	font-size: 3rem !important;
+}
+
 h4 {
 	font-size: 1.2rem;
 }
 h5 {
-	/* eg small section headings in a tool sidebar */
 	font-size: 0.85rem;
 }
 h6 {
-	/* eg in tags */
 	font-size: 0.7rem; 
 }
 h1,
@@ -37,7 +63,6 @@ h5,
 b,
 strong {
 	font-weight: 700 !important;
-	/* text-align: inherit !important; */ /* overriding styles.css */
 }
 
 large,
@@ -51,3 +76,4 @@ small,
 	font-size: 0.85rem;
 	font-weight: 500;
 }
+*/
