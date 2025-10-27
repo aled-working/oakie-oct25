@@ -1,0 +1,52 @@
+:root {
+  --green: #418D20;
+  --blue: #2196F3;
+  --paper: #F8F6F1;
+  --white: #FFFFFF;
+  --black: #000000;
+  --darker-grey: #575757;
+  --grey: #919191;
+  --lightish-grey: #CDCDCD;
+  --lighter-grey: #EAEAEA;
+
+  --faint: color-mix(in srgb, currentColor 7%, transparent);
+	--faintish: color-mix(in srgb, currentColor 40%, transparent);
+}
+
+.bg-green { background-color: var(--green); }
+.text-green { color: var(--green); }
+
+.bg-blue { background-color: var(--blue); }
+.text-blue { color: var(--blue); }
+
+.bg-paper { background-color: var(--paper); }
+.text-paper { color: var(--paper); }
+
+.bg-white { background-color: var(--white); }
+.text-white { color: var(--white); }
+
+.bg-black { background-color: var(--black); }
+.text-black { color: var(--black); }
+
+.bg-darker-grey { background-color: var(--darker-grey); }
+.text-darker-grey { color: var(--darker-grey); }
+
+.bg-grey { background-color: var(--grey); }
+.text-grey { color: var(--grey); }
+
+.bg-lightish-grey { background-color: var(--lightish-grey); }
+.text-lightish-grey { color: var(--lightish-grey); }
+
+.bg-lighter-grey { background-color: var(--lighter-grey); }
+.text-lighter-grey { color: var(--lighter-grey); }
+
+.bg-faint { background-color: var(--faint); }
+.text-faint { opacity: .7 }
+
+
+
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}

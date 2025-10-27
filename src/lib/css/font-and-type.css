@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap');
-html,
-body,
-.body,
-button,
-select {
-	font-family: 'Figtree', sans-serif !important;
-	font-optical-sizing: auto;
-	font-weight: 500 !important;
+:root{
+	font-size: 16px;
 }
 
 /* New text styles based on design system */
@@ -23,13 +17,12 @@ h3 {
 }
 
 p {
-	font-size: 14px;
 	line-height: 130%;
 	font-weight: 500;
 }
 
 strong {
-	font-size: 14px;
+	font-size: 1.05em;
 	line-height: 130%;
 	font-weight: 700;
 }
