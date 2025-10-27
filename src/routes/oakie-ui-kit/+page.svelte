@@ -50,15 +50,23 @@
 
 <style>
 	.layout-cols {
-		grid-template-columns: 30ch 90ch;
+		grid-template-columns: 1fr 3fr;
 		gap: 4rem;
-		max-width: 1400px;
+		width: min(1400px, 100svw);
 	}
 
-	/* MOVE */
 	.table-row:focus-within {
 		outline: 2px solid black;
 		border-radius: 0.5rem;
 		z-index: 9;
+	}
+	@media (max-width: 799px) {
+		.layout-cols {
+			grid-template-columns: 1fr;
+		}
+		.table-row {
+			grid-template-columns: 1fr;
+			margin-bottom: 4rem;
+		}
 	}
 </style>
