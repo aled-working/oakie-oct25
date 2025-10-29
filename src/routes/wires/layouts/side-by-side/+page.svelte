@@ -80,7 +80,8 @@
 
 		<!-- RIGHT col file preview -->
 		<div class="col gap-3">
-			<h2>Filename</h2>
+			<!-- <h2>Filename</h2> -->
+			<div class="tag text-blue">Filename.pdf</div>
 
 			<!-- paper -->
 			<div class="bg-paper panel col gap-4">
@@ -103,7 +104,7 @@
 	.layout-cols {
 		grid-template-columns: 1fr 1fr;
 		gap: 4rem;
-		width: min(1400px, 96svw);
+		width: min(1800px, 96svw);
 	}
 	.withLeftCol {
 		grid-template-columns: 1fr 2fr;

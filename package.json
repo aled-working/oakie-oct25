@@ -26,6 +26,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"@tabler/icons-svelte": "^3.35.0",
 		"@tailwindcss/vite": "^4.1.15"
 	}
 }

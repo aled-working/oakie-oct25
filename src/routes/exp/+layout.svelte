@@ -4,11 +4,6 @@
 	import '$lib/css/theme-oakie.css';
 	import '$lib/css/helpers.css';
 	import '$lib/css/ui.css';
-	import Header from '$lib/components/Header.svelte';
 </script>
 
-<Header />
-
 <slot />
-
-<style></style>
