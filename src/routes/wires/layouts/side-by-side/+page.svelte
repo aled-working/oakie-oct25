@@ -4,13 +4,19 @@
 	import CollapsingFields from '$lib/components/CollapsingFields.svelte';
 	import ExpandingRow from '$lib/components/ExpandingRow.svelte';
 	import Wire from '$lib/components/Wire.svelte';
+	import { IconSquareRoundedArrowLeftFilled, IconX } from '@tabler/icons-svelte';
 </script>
 
 <div class="page centred-col">
 	<div class="layout-cols grid">
 		<!-- LEFT COL main   -->
 		<main class="col gap-3">
-			<h2>Dr Aled Evans</h2>
+			<a href="./list"
+				><div class="row gap">
+					<IconSquareRoundedArrowLeftFilled />
+					<h2>Dr Aled Evans</h2>
+				</div></a
+			>
 
 			<!-- paper -->
 			<div class="bg-paper panel col gap-4">
@@ -81,7 +87,7 @@
 		<!-- RIGHT col file preview -->
 		<div class="col gap-3">
 			<!-- <h2>Filename</h2> -->
-			<div class="tag text-blue">Filename.pdf</div>
+			<a href="./list"><div class="tag text-blue"><IconX /> Filename.pdf</div></a>
 
 			<!-- paper -->
 			<div class="bg-paper panel col gap-4">

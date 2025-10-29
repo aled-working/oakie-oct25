@@ -1,11 +1,12 @@
 <script>
 	export let selected;
+	import { IconSquareRoundedArrowLeftFilled, IconX, IconUser } from '@tabler/icons-svelte';
 </script>
 
 <div class="ListRow" class:{selected}>
-	<div class="row">
+	<div class="row middle">
 		<p class="strong grow">Lorem ipsum</p>
-		<div class="icon">( )</div>
+		<div class="text-green"><IconUser /></div>
 		<div class="meta text-green">123456</div>
 	</div>
 </div>
