@@ -1,8 +1,8 @@
 <script>
 	import CollapsingFields from '$lib/components/CollapsingFields.svelte';
 	import ExpandingRow from '$lib/components/ExpandingRow.svelte';
-
 	import Wire from '$lib/components/Wire.svelte';
+	import { devMode } from '$lib/store';
 </script>
 
 <div class="page centred-col">
@@ -80,93 +80,25 @@
 						<div class="right col">
 							<div class="col gap">
 								<ExpandingRow />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
+								<ExpandingRow />
+								<ExpandingRow />
+								<ExpandingRow />
+								<ExpandingRow />
+								<ExpandingRow />
+								<ExpandingRow />
+								<ExpandingRow />
+								<ExpandingRow />
+								<ExpandingRow />
+								<ExpandingRow />
+								<ExpandingRow />
+								<!-- <CollapsingFields {devMode} />
+								<CollapsingFields {devMode} /> -->
 							</div>
 						</div>
 					</section>
 				</div>
 			</div>
 			<!-- ============== -->
-
-			<div class="bg-paper panel gap-4">
-				<!-- editable table of inputs -->
-				<button class="bg-blue text-white">Add</button>
-				<div class="editable-list-with-subcategories grid">
-					<!-- SectionWithSidebar -->
-					<section class="SectionWithSidebar grid-2">
-						<!-- left sidebar-->
-						<div class="left col">
-							<p class="strong">Section or category</p>
-							<p class="text-grey">Description</p>
-						</div>
-						<!-- right -->
-						<div class="right col">
-							<div class="col gap">
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-								<CollapsingFields {devMode} />
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
 		</main>
 	</div>
 </div>

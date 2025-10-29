@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap');
+:root{
+	font-size: 16px;
+}
+
+/* New text styles based on design system */
+h2 {
+	font-size: 26px;
+	line-height: 110%;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 17px;
+	line-height: 110%;
+	font-weight: 700;
+}
+
+p {
+	line-height: 130%;
+	font-weight: 500;
+}
+
+strong {
+	font-size: 1.05em;
+	line-height: 130%;
+	font-weight: 700;
+}
+
+.tiny {
+	font-size: 10px;
+	line-height: 130%;
+	font-weight: 500;
+}
+
+/* Old styles - commented out */
+/*
+h1 {
+	font-size: 3rem !important;
+}
+
+h4 {
+	font-size: 1.2rem;
+}
+h5 {
+	font-size: 0.85rem;
+}
+h6 {
+	font-size: 0.7rem; 
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+b,
+strong {
+	font-weight: 700 !important;
+}
+
+large,
+.large {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+small,
+.small,
+.meta {
+	font-size: 0.85rem;
+	font-weight: 500;
+}
+*/

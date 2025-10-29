@@ -1,5 +1,5 @@
 <script>
-	import Sidenav from '$lib/components/Sidenav.svelte';
+	import Sidenav from '$lib/components/old/Sidenav.svelte';
 </script>
 
 <div class="page grid">
