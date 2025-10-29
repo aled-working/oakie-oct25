@@ -19,6 +19,15 @@ button,
 	outline: none;
 	font-size: inherit;
 	padding: 1rem 1.5rem;
+	height: 3rem;
+
+	&.med {
+		height: 2.4rem;
+	}
+
+	&.small {
+		height: 1.8rem;
+	}
 }
 
 

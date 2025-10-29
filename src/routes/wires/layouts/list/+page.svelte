@@ -7,6 +7,7 @@
 	import '$lib/components/ExpandingRow.svelte';
 	import Wire from '$lib/components/Wire.svelte';
 	import { IconSquareRoundedArrowLeftFilled, IconX, IconUser } from '@tabler/icons-svelte';
+	import DevModeSwitch from '$lib/components/small/DevModeSwitch.svelte';
 
 	export let devMode = false;
 </script>
@@ -28,7 +29,10 @@
 
 		<!-- RIGHT COL main   -->
 		<main class="col gap-3">
-			<h2>Dr Aled Evans</h2>
+			<div class="row gap">
+				<h2>Dr Aled Evans</h2>
+				<DevModeSwitch />
+			</div>
 
 			<!-- paper -->
 			<div class="bg-paper panel col gap-4">
@@ -112,7 +116,7 @@
 	}
 	.layout-cols {
 		grid-template-columns: 20rem auto;
-		gap: 4rem;
+		gap: 8rem;
 		width: min(1400px, 96svw);
 	}
 	.withLeftCol {

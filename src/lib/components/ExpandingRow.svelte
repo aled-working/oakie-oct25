@@ -12,16 +12,16 @@
 	<div class="contenteditable small text-lightish-grey grow" contenteditable="true">123456</div>
 
 	<!-- extra fields in devMode -->
-	{#if devMode}
-		<div class="focus-only contenteditable small text-blue baseline grow" contenteditable="true">
+	{#if $devMode}
+		<div class="focus-only contenteditable small text-green baseline grow" contenteditable="true">
 			<p class="grow">Data</p>
 			<span class="small">Label</span>
 		</div>
-		<div class="focus-only contenteditable small text-blue baseline grow" contenteditable="true">
+		<div class="focus-only contenteditable small text-green baseline grow" contenteditable="true">
 			<p class="grow">Data</p>
 			<span class="small">Label</span>
 		</div>
-		<div class="focus-only contenteditable small text-blue baseline grow" contenteditable="true">
+		<div class="focus-only contenteditable small text-green baseline grow" contenteditable="true">
 			<p class="grow">Data</p>
 			<span class="small">Label</span>
 		</div>
