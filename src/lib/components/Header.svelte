@@ -1,4 +1,4 @@
-<header><a href="./browse"><img src="/LOGO.svg" alt="" /></a></header>
+<header><a href="#"><img src="/LOGO.svg" alt="" /></a></header>
 
 <style>
 	header {

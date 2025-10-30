@@ -125,12 +125,33 @@ td {
 }
 
 /* outline around group of inputs */
-.input-group:focus-within {
+.input-group:focus-within,
+textarea:focus {
 	outline: 2px solid black;
 	border-radius: 0.5rem;
 	z-index: 2;
 }
 
+/* required fields - highlight */
+input:required:invalid {
+	border-color: red;
+
+	&::placeholder {
+		color: red;
+		/* opacity: 1; */
+		/* optional for consistency */
+	}
+}
+
+input:required:invalid:focus {
+	border-color: var(--lighter-grey);
+
+	&::placeholder {
+		color: grey;
+		/* opacity: 1; */
+		/* optional for consistency */
+	}
+}
 
 
 

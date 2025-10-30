@@ -24,6 +24,10 @@ input {
 	font-size: inherit;
 }
 
+textarea {
+	line-height: 150%;
+}
+
 h1 {
 	font-size: 40px;
 	line-height: 110%;

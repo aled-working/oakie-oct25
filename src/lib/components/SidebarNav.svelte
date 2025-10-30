@@ -5,12 +5,15 @@
 	import '$lib/components/ExpandingRow.svelte';
 
 	import Wire from '$lib/components/Wire.svelte';
-
-	export let devMode = false;
+	export let data = {};
+	let default_data = {
+		title: 'untitled',
+		...data
+	};
 </script>
 
 <aside class="Sidebar col gap-2">
-	<h2>Lorem ipsum dolor sit amet</h2>
+	<h2>{data.title}</h2>
 	<nav class="col"></nav>
 	<a class="text-green" href="#">Setup and data</a>
 	<a class="text-green" href="#">Knowledge</a>

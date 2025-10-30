@@ -8,7 +8,7 @@
 
 <!-- contenteditable -->
 <div class="CollapsingFields row input-group baseline gap">
-	<div class="contenteditable strong" contenteditable="true">Aled Evans</div>
+	<div class="contenteditable strong" contenteditable="true">Lorem ipsum</div>
 	<div class="contenteditable small text-lightish-grey grow" contenteditable="true">123456</div>
 
 	<!-- extra fields in devMode -->
@@ -29,7 +29,7 @@
 
 	<!--  -->
 
-	<div class="contenteditable"><span class="text-blue tag small">Idiot</span></div>
+	<!-- <div class="contenteditable"><span class="text-blue tag small">Idiot</span></div> -->
 </div>
 
 <style>
