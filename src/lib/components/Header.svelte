@@ -1,4 +1,8 @@
-<header><a href="#"><img src="/LOGO.svg" alt="" /></a></header>
+<script>
+	export let home = './';
+</script>
+
+<header><a href={home}><img src="/LOGO.svg" alt="" /></a></header>
 
 <style>
 	header {
