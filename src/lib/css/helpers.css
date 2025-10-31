@@ -25,14 +25,13 @@ Spacers (approx):
 */
 
 /* note tw version */
-.flex,
 /* → flex */
 .row {
 	display: flex;
 	gap: 0.3em;
 }
 
-.flex-col,
+
 /* → flex flex-col */
 .col {
 	display: flex;
@@ -40,7 +39,7 @@ Spacers (approx):
 	gap: 0.3em;
 }
 
-.flex-wrap,
+
 /* → flex flex-wrap */
 .wrap {
 	display: flex;
@@ -57,7 +56,7 @@ Spacers (approx):
 	gap: 0.3em;
 }
 
-.flex-baseline,
+
 /* → flex items-baseline */
 .baseline {
 	display: flex;

@@ -20,7 +20,7 @@
 	export let css = ' text-green '; // <style> fixes black and grey for first two parts
 </script>
 
-<div class={'ListRow  row small-gap ' + css} class:{selected}>
+<div class={'ListRow  row gap-2 ' + css} class:{selected}>
 	<!-- see <style> - fixes black and grey for first two parts  -->
 	{#each words as part}
 		{#if part === '_'}

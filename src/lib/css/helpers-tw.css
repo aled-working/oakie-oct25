@@ -1,0 +1,20 @@
+/* (after Tailwind imports) */
+@layer components {
+    .card {
+        @apply relative flex flex-col p-6;
+    }
+
+    .panel {
+        @apply relative flex flex-col p-12 max-w-full;
+    }
+
+    .col {
+        @apply flex flex-col;
+    }
+
+    .row {
+        @apply flex;
+    }
+
+
+}

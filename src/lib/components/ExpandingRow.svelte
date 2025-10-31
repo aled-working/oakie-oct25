@@ -7,7 +7,7 @@
 </script>
 
 <!-- contenteditable -->
-<div class="CollapsingFields row input-group baseline gap">
+<div class="ExpandingRow row input-group baseline gap-4">
 	<div class="contenteditable strong" contenteditable="true">Lorem ipsum</div>
 	<div class="contenteditable small text-lightish-grey grow" contenteditable="true">123456</div>
 
@@ -34,14 +34,14 @@
 
 <style>
 	/* NOTE: .contenteditable is styled in ui.css (padding and bg) */
-	.CollapsingFields:focus-within {
+	.ExpandingRow:focus-within {
 		display: grid;
 		gap: 0;
 	}
-	.CollapsingFields:not(:focus-within) .focus-only {
+	.ExpandingRow:not(:focus-within) .focus-only {
 		display: none;
 	}
-	.CollapsingFields:not(:focus-within) .contenteditable {
+	.ExpandingRow:not(:focus-within) .contenteditable {
 		border-top: 0;
 		padding: 0;
 	}

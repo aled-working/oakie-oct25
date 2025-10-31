@@ -1,0 +1,345 @@
+@import "tailwindcss";
+
+/* 1) Theme tokens (so you can use bg-paper, text-green, etc.) */
+@theme {
+    --color-green: #418D20;
+    --color-blue: #2196F3;
+    --color-paper: #F8F6F1;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-darker-grey: #575757;
+    --color-grey: #919191;
+    --color-lightish-grey: #CDCDCD;
+    --color-lighter-grey: #EAEAEA;
+}
+
+/* 2) Base type (optional: keeps your Figtree + heading sizes) */
+@layer base {
+    html {
+        font-size: 16px;
+    }
+
+    :root,
+    html,
+    body {
+        @apply font-sans;
+    }
+
+    h1 {
+        @apply text-[40px] leading-[110%] font-bold;
+    }
+
+    h2 {
+        @apply text-[26px] leading-[110%] font-bold;
+    }
+
+    h3 {
+        @apply text-[17px] leading-[110%] font-bold;
+    }
+
+    p {
+        @apply leading-[130%] font-medium;
+    }
+
+    strong,
+    b {
+        @apply font-bold;
+    }
+
+    small {
+        @apply text-[13px] leading-[130%] font-medium;
+    }
+}
+
+/* 3) Shim layer — re-implement your old classes using @apply */
+@layer components {
+
+
+    /* =========== helpers (layout) =========== */
+    .row {
+        @apply flex;
+    }
+
+    .col {
+        @apply flex flex-col;
+    }
+
+    .wrap {
+        @apply flex flex-wrap;
+    }
+
+    .baseline {
+        @apply flex items-baseline;
+    }
+
+    .apart,
+    .space-between {
+        @apply flex justify-between grow;
+    }
+
+    .middle {
+        @apply flex items-center justify-center;
+    }
+
+    .centred-col {
+        @apply flex flex-col items-center;
+    }
+
+    .centred-row {
+        @apply flex flex-row items-center justify-center;
+    }
+
+
+    /* =========== ui =========== */
+    /* Cards/panels */
+    .card {
+        @apply relative flex flex-col p-6;
+    }
+
+    .panel {
+        @apply relative flex flex-col p-12 max-w-full;
+    }
+
+
+    /* ========== Page ========== */
+    .page {
+        @apply min-h-[100svh] relative max-w-[100svw] p-16;
+    }
+
+    /* ========== Buttons ========== */
+    button,
+    .button {
+        @apply cursor-pointer inline-flex items-center gap-[1ch] border-0 outline-0 text-base h-12 px-6 rounded-[4rem];
+    }
+
+    .button.med,
+    button.med {
+        @apply h-10;
+    }
+
+    .button.small,
+    button.small {
+        @apply h-7;
+    }
+
+
+
+
+    [popover]::backdrop {
+        background: #0009;
+    }
+
+    /* ========== Form elements ========== */
+    input[type='text'],
+    input[type='email'],
+    input[type='password'],
+    input[type='number'],
+    input[type='search'],
+    input[type='tel'],
+    input[type='time'],
+    input[type='url'],
+    input[type='week'],
+    input[type='month'],
+    input[type='file'],
+    input[type='date'],
+    input[type='datetime-local'],
+    textarea,
+    .contenteditable,
+    .input,
+    .cell,
+    thead,
+    td {
+        @apply bg-transparent p-4 pl-6 rounded-none border-0 border-t border-lightish-grey font-sans text-base;
+    }
+
+    input[type='text']:hover,
+    input[type='text']:focus,
+    input[type='email']:hover,
+    input[type='email']:focus,
+    input[type='password']:hover,
+    input[type='password']:focus,
+    input[type='number']:hover,
+    input[type='number']:focus,
+    input[type='search']:hover,
+    input[type='search']:focus,
+    input[type='tel']:hover,
+    input[type='tel']:focus,
+    input[type='time']:hover,
+    input[type='time']:focus,
+    input[type='url']:hover,
+    input[type='url']:focus,
+    input[type='week']:hover,
+    input[type='week']:focus,
+    input[type='month']:hover,
+    input[type='month']:focus,
+    input[type='file']:hover,
+    input[type='file']:focus,
+    input[type='date']:hover,
+    input[type='date']:focus,
+    input[type='datetime-local']:hover,
+    input[type='datetime-local']:focus,
+    textarea:hover,
+    textarea:focus,
+    .input:hover,
+    .input:focus,
+    .cell:hover,
+    .cell:focus {
+        @apply bg-white;
+    }
+
+    .input-group {
+        @apply focus-within:outline focus-within:outline-2 focus-within:outline-black focus-within:rounded-md focus-within:z-20;
+    }
+
+    input:required:invalid {
+        @apply border-t-[1px] border-t-red-500;
+    }
+
+    input:required:invalid::placeholder {
+        @apply text-red-500;
+    }
+
+    input:required:invalid:focus {
+        @apply border-t-[1px] border-t-lighter-grey;
+    }
+
+    input:required:invalid:focus::placeholder {
+        @apply text-grey;
+    }
+
+    input:disabled,
+    .disabled {
+        @apply opacity-50 cursor-not-allowed;
+    }
+
+    .disabled:hover {
+        @apply scale-90 line-through;
+    }
+
+    /* ========== Layout helpers (migrating off helpers.css) ========== */
+    .row {
+        @apply flex;
+    }
+
+    .col {
+        @apply flex flex-col;
+    }
+
+    .wrap {
+        @apply flex flex-wrap;
+    }
+
+    .wrap-reverse {
+        @apply flex flex-wrap-reverse;
+    }
+
+    .baseline {
+        @apply flex items-baseline;
+    }
+
+    .apart,
+    .space-between {
+        @apply flex justify-between grow;
+    }
+
+    .middle {
+        @apply flex items-center justify-center;
+    }
+
+    .centred-col {
+        @apply flex flex-col items-center;
+    }
+
+    .centred-row {
+        @apply flex flex-row items-center justify-center;
+    }
+
+    .reverse-col,
+    .col-reverse {
+        @apply flex flex-col-reverse;
+    }
+
+    /* Gaps */
+    /* .gap {
+        @apply gap-4;
+    }
+
+    .gap-2 {
+        @apply gap-8;
+    }
+
+    .gap-3 {
+        @apply gap-12;
+    }
+
+    .gap-4 {
+        @apply gap-16;
+    }
+
+    .small-gap {
+        @apply gap-2;
+    }
+
+    .tight,
+    .no-gap {
+        @apply gap-0;
+    } */
+
+    /* Spacers */
+    /* .spacer-0 {
+        @apply h-0;
+    }
+
+    .spacer,
+    .spacer-1 {
+        @apply h-4;
+    }
+
+    .spacer-2 {
+        @apply h-8;
+    }
+
+    .spacer-3 {
+        @apply h-12;
+    }
+
+    .spacer-4 {
+        @apply h-16;
+    }
+
+    .spacer-8 {
+        @apply h-32;
+    } */
+
+
+    /* Fun bits */
+    .tag {
+        @apply rounded-md px-[1em] py-[0.5em] bg-[--faint] inline-flex items-center gap-[1em] w-fit;
+    }
+
+    .badge {
+        @apply inline-flex items-center justify-center w-[3ch] h-[3ch] rounded-full;
+    }
+
+    mark {
+        @apply px-[0.5ch] pb-[0.3ch] text-[0.8rem] font-bold rounded-[0.5ch];
+    }
+
+    .bubble,
+    .bubble-left,
+    .bubble-right {
+        @apply flex items-center gap-4 p-[2ch] min-h-14 max-w-max rounded-3xl;
+    }
+
+    .bubble-left {
+        @apply self-start rounded-bl-none;
+    }
+
+    .bubble-right {
+        @apply self-end rounded-br-none;
+    }
+
+
+
+
+}
