@@ -1,9 +1,4 @@
 <script>
-	import CollapsingFields from '$lib/components/CollapsingFields.svelte';
-	import ExpandingRow from '$lib/components/ExpandingRow.svelte';
-
-	import '$lib/components/ExpandingRow.svelte';
-
 	import Wire from '$lib/components/Wire.svelte';
 	export let data = {};
 	let default_data = {

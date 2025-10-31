@@ -1,18 +1,19 @@
 <script>
-	import File from '$lib/components/File.svelte';
+	import File from '$lib/components/ListFile.svelte';
 
 	import Actions from '$lib/components/Actions.svelte';
-	import Sidebar from '$lib/components/SidebarNav.svelte';
+	import SidebarNav from '$lib/components/SidebarNav.svelte';
 	import CollapsingFields from '$lib/components/CollapsingFields.svelte';
 	import ExpandingRow from '$lib/components/ExpandingRow.svelte';
-	import '$lib/components/ExpandingRow.svelte';
 	import Wire from '$lib/components/Wire.svelte';
+
 	import {
 		IconSquareRoundedArrowLeftFilled,
 		IconX,
 		IconChevronRight,
 		IconFileImport
 	} from '@tabler/icons-svelte';
+	import ListRow from '$lib/components/ListRow.svelte';
 
 	export let devMode = false;
 </script>
@@ -20,7 +21,7 @@
 <div class="page centred-col">
 	<div class="layout-cols grid">
 		<!-- sidebar -->
-		<Sidebar data={{ title: 'Untitled' }}></Sidebar>
+		<SidebarNav data={{ title: 'Untitled' }}></SidebarNav>
 
 		<!-- main   -->
 		<main class="col gap-3">

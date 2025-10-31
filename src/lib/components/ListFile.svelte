@@ -1,6 +1,10 @@
 <script>
 	import { IconChevronRight, IconBriefcase2 } from '@tabler/icons-svelte';
 	export let style;
+	/* examples:
+	<File style="zip">81234567.zip</File>
+	<File><a href="./3-list">81234567_bssdg.pdf</a></File>
+	*/
 </script>
 
 <div class="File row middle bg-white">

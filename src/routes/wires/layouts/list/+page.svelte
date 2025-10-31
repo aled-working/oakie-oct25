@@ -1,7 +1,7 @@
 <script>
 	import ListRow from '$lib/components/ListRow.svelte';
 	import Actions from '$lib/components/Actions.svelte';
-	import Sidebar from '$lib/components/SidebarNav.svelte';
+	import SidebarNav from '$lib/components/SidebarNav.svelte';
 	import CollapsingFields from '$lib/components/CollapsingFields.svelte';
 	import ExpandingRow from '$lib/components/ExpandingRow.svelte';
 	import '$lib/components/ExpandingRow.svelte';
