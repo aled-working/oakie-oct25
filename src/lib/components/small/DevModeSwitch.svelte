@@ -8,7 +8,7 @@
 		><IconCode /> dev</button
 	>
 {:else}
-	<button on:click={() => ($devMode = !$devMode)} class="bg-paper text-green med text-green gap-4"
+	<button on:click={() => ($devMode = !$devMode)} class="text-green med text-green gap-4 bg-white"
 		><IconCode /></button
 	>
 {/if}

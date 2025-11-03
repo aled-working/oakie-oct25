@@ -1,5 +1,5 @@
 <script>
-	export let home = './';
+	export let home = '/';
 </script>
 
 <header><a href={home}><img src="/LOGO.svg" alt="" /></a></header>
