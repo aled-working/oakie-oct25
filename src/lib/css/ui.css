@@ -5,8 +5,6 @@
 	max-width: 100svw;
 }
 
-
-
 button,
 .button {
 	cursor: pointer;
@@ -29,7 +27,6 @@ button,
 		height: 1.8rem;
 	}
 }
-
 
 /* cards and panels */
 .card,
@@ -60,7 +57,6 @@ dialog,
 	padding: 3rem min(3rem, 5svw);
 	/* border-radius: 3rem; */
 	/* background-color: var(--faint); */
-
 }
 
 [popover] {
@@ -70,7 +66,6 @@ dialog,
 	&::backdrop {
 		background: #0009;
 	}
-
 }
 
 /* ======= forms ======= */
@@ -109,8 +104,9 @@ td {
 	&:focus,
 	&:active {
 		background-color: white;
+		outline: none;
+		border: none;
 	}
-
 }
 
 :disabled,
@@ -153,8 +149,6 @@ input:required:invalid:focus {
 	}
 }
 
-
-
 /* joined up rows and columns of buttons */
 .stack,
 .bar {
@@ -166,11 +160,11 @@ input:required:invalid:focus {
 	overflow: hidden;
 }
 
-.stack>input,
-.stack>textarea,
-.stack>.button,
-.stack>button,
-.stack>.card {
+.stack > input,
+.stack > textarea,
+.stack > .button,
+.stack > button,
+.stack > .card {
 	/* group of inputs */
 	border-radius: 0;
 }
@@ -179,7 +173,7 @@ input:required:invalid:focus {
 	flex-direction: row;
 }
 
-.bar>* {
+.bar > * {
 	border-radius: 0;
 }
 
@@ -207,7 +201,6 @@ input:required:invalid:focus {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-
 }
 
 /* highlighter eg *New feature* */
@@ -215,10 +208,8 @@ mark {
 	padding: 0 0.5ch 0.3ch 0.5ch;
 	font-size: 0.8rem;
 	font-weight: bold;
-	border-radius: .5ch;
-
+	border-radius: 0.5ch;
 }
-
 
 /* fun bits */
 /* ================= */
@@ -252,8 +243,6 @@ mark {
 .sqircle {
 	border-radius: 30%;
 }
-
-
 
 /* ==== responsive ================== */
 

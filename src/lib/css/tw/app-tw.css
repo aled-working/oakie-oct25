@@ -52,6 +52,7 @@
 	}
 
 	strong,
+	.strong,
 	b {
 		@apply font-bold;
 	}
@@ -199,6 +200,8 @@
 	.cell:hover,
 	.cell:focus {
 		@apply bg-white;
+		outline: none;
+		border: none;
 	}
 	.contenteditable {
 		outline: none;

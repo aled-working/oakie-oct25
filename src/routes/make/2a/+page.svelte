@@ -8,6 +8,7 @@
 	import { IconSquareRoundedArrowLeftFilled, IconX } from '@tabler/icons-svelte';
 	import { goto } from '$app/navigation';
 	import Header from '$lib/components/Header.svelte';
+	import { user_content } from '$lib/store';
 </script>
 
 <Header home="/flow-tw/" />
@@ -18,7 +19,6 @@
 
 		<!-- main   -->
 		<main class="bg-paper panel col gap-12">
-			<!-- side -->
 			<div class="row h-12 gap-4">
 				<IconSquareRoundedArrowLeftFilled />
 				<h2>New Claim Automation</h2>
@@ -36,9 +36,9 @@
 					<div class="right col">
 						<div class="input-group col">
 							<input
+								bind:value={$user_content.title}
 								class="strong"
 								type="text"
-								value=""
 								placeholder="Name this automation"
 								autofocus
 								required

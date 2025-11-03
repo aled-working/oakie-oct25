@@ -6,6 +6,7 @@
 	import CollapsingFields from '$lib/components/CollapsingFields.svelte';
 	import ExpandingRow from '$lib/components/ExpandingRow.svelte';
 	import Wire from '$lib/components/Wire.svelte';
+	import { user_content } from '$lib/store';
 
 	import {
 		IconSquareRoundedArrowLeftFilled,
@@ -27,15 +28,14 @@
 
 		<!-- main   -->
 		<main class="bg-paper panel col gap-12">
-			<div class="row gap-4">
+			<div class="row h-12 gap-4">
 				<IconSquareRoundedArrowLeftFilled />
 				<h2>New Claim Automation</h2>
 			</div>
 
-			<!-- PAPER -->
-			<div class="bg-paper panel gap-12">
+			<div class="col gap-16">
 				<!-- SECTION  - title-->
-				<section class="withLeftCol grid">
+				<section class=" grid grid-cols-[1fr_2fr]">
 					<!-- left sidebar-->
 					<div class="left col">
 						<h3>Get started</h3>
@@ -48,9 +48,9 @@
 							<input
 								class="strong"
 								type="text"
-								value="Post Paid Claims EU"
 								placeholder="Name this automation"
 								required
+								bind:value={$user_content.title}
 							/>
 							<input type="text" value="" placeholder="Description (optional)" />
 						</div>
@@ -58,7 +58,7 @@
 				</section>
 
 				<!-- SECTION  - dataset title-->
-				<section class="withLeftCol grid">
+				<section class=" grid grid-cols-[1fr_2fr]">
 					<!-- left sidebar-->
 					<div class="left col">
 						<h3>Dataset for testing</h3>
@@ -75,11 +75,11 @@
 				</section>
 
 				<!-- SECTION  - file uploads-->
-				<section class="withLeftCol grid">
+				<section class=" grid grid-cols-[1fr_2fr]">
 					<!-- left sidebar-->
 					<div class="left col"></div>
 					<!-- right -->
-					<div class="right col">
+					<div class="right col gap-2">
 						<Actions
 							><button class=" bg-faint gap-4 text-white"><IconFileImport /> Add</button>
 							<div class="spacer grow"></div>
@@ -106,11 +106,6 @@
 </div>
 
 <style>
-	.long-text {
-		min-height: 40rem;
-		field-sizing: content;
-	}
-
 	/* move? */
 	.page {
 		padding-top: 4rem;
@@ -119,9 +114,6 @@
 		grid-template-columns: 10rem auto;
 		gap: 4rem;
 		width: min(1400px, 96svw);
-	}
-	.withLeftCol {
-		grid-template-columns: 1fr 2fr;
 	}
 
 	@media (max-width: 799px) {

@@ -1,4 +1,5 @@
 <script>
+	import { user_content } from '$lib/store';
 	export let data = {};
 	let default_data = {
 		title: 'untitled',
@@ -7,7 +8,8 @@
 </script>
 
 <aside class="Sidebar col gap-8 py-12">
-	<h2>{data.title}</h2>
+	<!-- <h2>{data.title}</h2> -->
+	<h2>{$user_content?.title}</h2>
 	<nav class="col"></nav>
 	<a class="text-green" href="#">Setup and data</a>
 	<a class="text-green" href="#">Knowledge</a>
