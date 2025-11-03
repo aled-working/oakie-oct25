@@ -200,6 +200,15 @@
 	.cell:focus {
 		@apply bg-white;
 	}
+	.contenteditable {
+		outline: none;
+		border: none;
+		&:focus,
+		&:hover,
+		&:active {
+			@apply bg-white;
+		}
+	}
 
 	.input-group {
 		@apply focus-within:z-20 focus-within:rounded-md focus-within:outline focus-within:outline-2 focus-within:outline-black;
