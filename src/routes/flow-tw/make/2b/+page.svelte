@@ -26,7 +26,7 @@
 		<SidebarNav data={{ title: 'Untitled' }}></SidebarNav>
 
 		<!-- main   -->
-		<main class="col gap-12">
+		<main class="bg-paper panel col gap-12">
 			<div class="row gap-4">
 				<IconSquareRoundedArrowLeftFilled />
 				<h2>New Claim Automation</h2>

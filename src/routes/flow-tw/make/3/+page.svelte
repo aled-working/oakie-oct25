@@ -17,7 +17,7 @@
 <div class="page centred-col">
 	<div class="layout-cols grid">
 		<!-- LEFT-COL list -->
-		<aside class="col">
+		<aside class="col py-12">
 			<div class="row gap-4">
 				<IconSquareRoundedArrowLeftFilled />
 				<h2>Claims</h2>
@@ -30,14 +30,13 @@
 		</aside>
 
 		<!-- RIGHT COL main   -->
-		<main class="col gap-12">
-			<div class="row gap-4">
+		<main class="bg-paper panel">
+			<div class="row h-24 gap-4">
 				<h2>Dr Aled Evans</h2>
 				<DevModeSwitch />
 			</div>
-
 			<!-- paper -->
-			<div class="bg-paper panel col gap-12">
+			<div class="bg-paper col gap-8">
 				<!--  -->
 				<div class="mini-section withLeftCol baseline grid">
 					<!-- left -->
@@ -121,13 +120,25 @@
 		gap: 8rem;
 		width: min(1400px, 96svw);
 	}
+	section .right {
+		border-top: 1px solid var(--color-lightish-grey);
+	}
+	section {
+		& .right,
+		& .left {
+			padding-top: 1rem;
+		}
+	}
 	.withLeftCol {
+		padding-top: 1rem;
 		grid-template-columns: 1fr 2fr;
+		padding-top: 1rem;
+		/* */
 	}
 	.mini-section {
 		padding: 1rem 0;
-		border-top: 1px solid var(--lighter-grey);
-		border-bottom: 1px solid var(--lighter-grey);
+		border-top: 1px solid var(color--lighter-grey);
+		border-bottom: 1px solid var(color--lighter-grey);
 	}
 
 	@media (max-width: 799px) {

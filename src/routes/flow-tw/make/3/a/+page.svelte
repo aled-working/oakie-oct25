@@ -1,35 +1,43 @@
 <script>
+	import ListRow from '$lib/components/ListRow.svelte';
+	import Actions from '$lib/components/Actions.svelte';
+	import SidebarNav from '$lib/components/SidebarNav.svelte';
+	import CollapsingFields from '$lib/components/CollapsingFields.svelte';
 	import ExpandingRow from '$lib/components/ExpandingRow.svelte';
+	import '$lib/components/ExpandingRow.svelte';
 	import Wire from '$lib/components/Wire.svelte';
-	import { IconSquareRoundedArrowLeftFilled, IconX } from '@tabler/icons-svelte';
+	import { IconSquareRoundedArrowLeftFilled, IconX, IconUser } from '@tabler/icons-svelte';
 	import DevModeSwitch from '$lib/components/small/DevModeSwitch.svelte';
 	import Header from '$lib/components/Header.svelte';
+
+	export let devMode = false;
 </script>
 
 <Header home="/flow-tw/" />
 <div class="page centred-col">
 	<div class="layout-cols grid">
-		<!-- COLUMN file preview -->
-		<div class="panel bg-paper col gap-12">
-			<!-- <h2>Filename</h2> -->
-			<a href="./list"><div class="tag text-blue"><IconX /> Filename.pdf</div></a>
-
-			<!-- paper -->
-			<div class="col gap-4">
-				<Wire h={'50rem'}>Doc preview</Wire>
-			</div>
-		</div>
-
-		<!-- COLUMN main   -->
-		<main class="panel bg-paper col gap-12">
+		<!-- LEFT-COL list -->
+		<aside class="col">
 			<div class="row gap-4">
 				<IconSquareRoundedArrowLeftFilled />
+				<h2>Claims</h2>
+			</div>
+
+			<div class="h-16"></div>
+			{#each { length: 20 } as _, i}
+				<ListRow words={['Aled Evans']} />
+			{/each}
+		</aside>
+
+		<!-- RIGHT COL main   -->
+		<main class="col gap-12">
+			<div class="row gap-4">
 				<h2>Dr Aled Evans</h2>
 				<DevModeSwitch />
 			</div>
 
 			<!-- paper -->
-			<div class="col gap-16">
+			<div class="bg-paper panel col gap-12">
 				<!--  -->
 				<div class="mini-section withLeftCol baseline grid">
 					<!-- left -->
@@ -42,10 +50,12 @@
 					<!-- left -->
 					<p class="strong">Files</p>
 					<!-- right -->
-					<div class="tags row gap-2">
-						<div class="text-blue tag bg-[--faint]">aaaaaaaaa.pdf</div>
-						<div class="text-blue tag">aaaaaaaaa.pdf</div>
-						<div class="text-blue tag">aaaaaaaaa.pdf</div>
+					<div class="row">
+						<a href="./4"
+							><div class="text-blue tag">aaaaaaaaa.pdf</div>
+							<div class="text-blue tag">aaaaaaaaa.pdf</div>
+							<div class="text-blue tag">aaaaaaaaa.pdf</div>
+						</a>
 					</div>
 				</div>
 				<!--  -->
@@ -107,9 +117,9 @@
 		padding-top: 4rem;
 	}
 	.layout-cols {
-		grid-template-columns: 1fr 1fr;
-		gap: 4rem;
-		width: min(1800px, 96svw);
+		grid-template-columns: 20rem auto;
+		gap: 8rem;
+		width: min(1400px, 96svw);
 	}
 	.withLeftCol {
 		grid-template-columns: 1fr 2fr;

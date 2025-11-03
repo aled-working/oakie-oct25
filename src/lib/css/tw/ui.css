@@ -1,0 +1,273 @@
+.page {
+	min-height: 100svh;
+	padding: 4rem min(4rem, 5svw);
+	position: relative;
+	max-width: 100svw;
+}
+
+
+
+button,
+.button {
+	cursor: pointer;
+	border-radius: 4rem;
+	display: flex;
+	gap: 1ch;
+	align-items: center;
+	width: fit-content;
+	border: none;
+	outline: none;
+	font-size: inherit;
+	padding: 1rem 1.5rem;
+	height: 3rem;
+
+	&.med {
+		height: 2.4rem;
+	}
+
+	&.small {
+		height: 1.8rem;
+	}
+}
+
+
+/* cards and panels */
+.card,
+.panel,
+.modal,
+article,
+[popover] {
+	/* ??? */
+	display: flex;
+	flex-direction: column;
+	/* gap: 1em; */
+}
+
+.card,
+article {
+	position: relative;
+	padding: 1.5rem;
+	/* border-radius: 1.5rem; */
+	/* background-color: var(--faint); */
+}
+
+.panel,
+dialog,
+.modal,
+[popover] {
+	position: relative;
+	padding: 3rem;
+	padding: 3rem min(3rem, 5svw);
+	/* border-radius: 3rem; */
+	/* background-color: var(--faint); */
+
+}
+
+[popover] {
+	border: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+	&::backdrop {
+		background: #0009;
+	}
+
+}
+
+/* ======= forms ======= */
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+input[type='month'],
+input[type='file'],
+input[type='date'],
+input[type='datetime-local'],
+textarea,
+.contenteditable,
+.input,
+.cell,
+thead,
+td {
+	background-color: unset;
+	padding: 1rem;
+	padding-left: 1.5rem;
+	border-radius: 0;
+	/* -webkit-appearance: none;
+	appearance: none; */
+	outline: none;
+	border: none;
+	border-top: 1px solid var(--lightish-grey);
+	font-family: inherit;
+	font-size: inherit;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: white;
+	}
+
+}
+
+:disabled,
+.disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+
+	&:hover {
+		scale: 0.8;
+		text-decoration: line-through;
+	}
+}
+
+/* outline around group of inputs */
+.input-group:focus-within,
+textarea:focus {
+	outline: 2px solid black;
+	border-radius: 0.5rem;
+	z-index: 2;
+}
+
+/* required fields - highlight */
+input:required:invalid {
+	border-color: red;
+
+	&::placeholder {
+		color: red;
+		/* opacity: 1; */
+		/* optional for consistency */
+	}
+}
+
+input:required:invalid:focus {
+	border-color: var(--lighter-grey);
+
+	&::placeholder {
+		color: grey;
+		/* opacity: 1; */
+		/* optional for consistency */
+	}
+}
+
+
+
+/* joined up rows and columns of buttons */
+.stack,
+.bar {
+	/* group of inputs */
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.stack>input,
+.stack>textarea,
+.stack>.button,
+.stack>button,
+.stack>.card {
+	/* group of inputs */
+	border-radius: 0;
+}
+
+.bar {
+	flex-direction: row;
+}
+
+.bar>* {
+	border-radius: 0;
+}
+
+/* tags and marks */
+
+/* tags */
+.tag {
+	border-radius: 5px;
+	padding: 0.5em 1em;
+	background-color: var(--faint);
+	width: fit-content;
+	/* flex, for icons */
+	display: inline-flex;
+	align-items: center;
+	gap: 1em;
+}
+
+/* badge */
+.badge {
+	width: 3ch;
+	height: 3ch;
+	border-radius: 50%;
+	/* background-color: var(--faint); */
+	/* flex, for icons */
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+/* highlighter eg *New feature* */
+mark {
+	padding: 0 0.5ch 0.3ch 0.5ch;
+	font-size: 0.8rem;
+	font-weight: bold;
+	border-radius: .5ch;
+
+}
+
+
+/* fun bits */
+/* ================= */
+.kbd {
+	border-radius: 4px;
+	border-bottom: 4px solid #00000033 !important;
+}
+
+.bubble,
+.bubble-left,
+.bubble-right {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	border-radius: 1.5rem;
+	padding: 2ch 2ch;
+	min-height: 3.5rem;
+	max-width: max-content;
+}
+
+.bubble-left {
+	border-bottom-left-radius: 0;
+	justify-self: flex-start;
+}
+
+.bubble-right {
+	border-bottom-right-radius: 0;
+	justify-self: flex-end;
+}
+
+.sqircle {
+	border-radius: 30%;
+}
+
+
+
+/* ==== responsive ================== */
+
+/* TODO: adapt older ui kit */
+
+/* responsive switch */
+@media (max-width: 799px) {
+	.desktop-only {
+		display: none !important;
+	}
+}
+
+@media (min-width: 800px) {
+	.mobile-only {
+		display: none !important;
+	}
+}

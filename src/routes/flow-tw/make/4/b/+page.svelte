@@ -42,8 +42,8 @@
 					<!-- left -->
 					<p class="strong">Files</p>
 					<!-- right -->
-					<div class="tags row gap-2">
-						<div class="text-blue tag bg-[--faint]">aaaaaaaaa.pdf</div>
+					<div class="tags row">
+						<div class="text-blue tag">aaaaaaaaa.pdf</div>
 						<div class="text-blue tag">aaaaaaaaa.pdf</div>
 						<div class="text-blue tag">aaaaaaaaa.pdf</div>
 					</div>

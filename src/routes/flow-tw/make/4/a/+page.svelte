@@ -9,19 +9,19 @@
 <Header home="/flow-tw/" />
 <div class="page centred-col">
 	<div class="layout-cols grid">
-		<!-- COLUMN file preview -->
-		<div class="panel bg-paper col gap-12">
+		<!-- RIGHT col file preview -->
+		<div class="col gap-12">
 			<!-- <h2>Filename</h2> -->
 			<a href="./list"><div class="tag text-blue"><IconX /> Filename.pdf</div></a>
 
 			<!-- paper -->
-			<div class="col gap-4">
+			<div class="bg-paper panel col gap-4">
 				<Wire h={'50rem'}>Doc preview</Wire>
 			</div>
 		</div>
 
-		<!-- COLUMN main   -->
-		<main class="panel bg-paper col gap-12">
+		<!-- LEFT COL main   -->
+		<main class="col gap-12">
 			<div class="row gap-4">
 				<IconSquareRoundedArrowLeftFilled />
 				<h2>Dr Aled Evans</h2>
@@ -29,7 +29,7 @@
 			</div>
 
 			<!-- paper -->
-			<div class="col gap-16">
+			<div class="bg-paper panel col gap-16">
 				<!--  -->
 				<div class="mini-section withLeftCol baseline grid">
 					<!-- left -->
@@ -42,8 +42,8 @@
 					<!-- left -->
 					<p class="strong">Files</p>
 					<!-- right -->
-					<div class="tags row gap-2">
-						<div class="text-blue tag bg-[--faint]">aaaaaaaaa.pdf</div>
+					<div class="tags row">
+						<div class="text-blue tag">aaaaaaaaa.pdf</div>
 						<div class="text-blue tag">aaaaaaaaa.pdf</div>
 						<div class="text-blue tag">aaaaaaaaa.pdf</div>
 					</div>

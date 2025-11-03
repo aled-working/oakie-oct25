@@ -17,14 +17,15 @@
 		<SidebarNav data={{ title: 'Untitled' }}></SidebarNav>
 
 		<!-- main   -->
-		<main class="col gap-12">
-			<div class="row gap-4">
+		<main class="bg-paper panel col gap-12">
+			<!-- side -->
+			<div class="row h-12 gap-4">
 				<IconSquareRoundedArrowLeftFilled />
 				<h2>New Claim Automation</h2>
 			</div>
 
-			<!-- paper -->
-			<div class="bg-paper panel gap-16">
+			<!-- section content -->
+			<div class="col gap-16">
 				<!--  -->
 				<section class="withLeftCol grid">
 					<!-- left sidebar-->
@@ -71,7 +72,7 @@
 						<p class="text-green">Add case files for testing (and optional config)</p>
 						<div class="spacer"></div>
 						<Actions
-							><button class=" bg-faint text-white" on:click={() => goto('./2b')}
+							><button class="  bg-faint text-white" on:click={() => goto('./2b')}
 								>Add case files</button
 							>
 							<div class="h-4 grow"></div>

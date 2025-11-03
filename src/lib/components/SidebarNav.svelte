@@ -6,7 +6,7 @@
 	};
 </script>
 
-<aside class="Sidebar col gap-8">
+<aside class="Sidebar col gap-8 py-12">
 	<h2>{data.title}</h2>
 	<nav class="col"></nav>
 	<a class="text-green" href="#">Setup and data</a>

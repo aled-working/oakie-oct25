@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Flow+Rounded&display=swap'); */
+
+:root,
+html {
+	font-size: 16px;
+}
+
+html,
+body,
+.body,
+button,
+select {
+	font-family: 'Figtree', sans-serif !important;
+	/* font-family: 'Flow Rounded', sans-serif !important; */
+	font-optical-sizing: auto;
+	font-weight: 500 !important;
+}
+
+button,
+select,
+textarea,
+input {
+	font-size: inherit;
+}
+
+textarea {
+	line-height: 150%;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: 110%;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 26px;
+	line-height: 110%;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 17px;
+	line-height: 110%;
+	font-weight: 700;
+}
+
+p {
+	/* font-size: 14px; */
+	line-height: 130%;
+	font-weight: 500;
+}
+
+strong,
+.strong,
+b {
+	font-size: 1.05em;
+	font-weight: 700;
+}
+
+.small,
+small {
+	font-size: 13px;
+	line-height: 130%;
+	font-weight: 500;
+}
+
+.tiny {
+	font-size: 11px;
+	line-height: 130%;
+	font-weight: 500;
+}
